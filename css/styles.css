@@ -1,0 +1,26 @@
+@import 'variables.css';
+
+/* "content-box" tells the browser to ignore and exclude borders or padding in element's sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    color: var(--colorMain);
+    background-color: var(--colorBgMain);
+    font-family: var(--fontMain);
+}
+
+nav {
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 1rem;
+        li {
+            list-style-type: none;
+        }
+    }
+}
